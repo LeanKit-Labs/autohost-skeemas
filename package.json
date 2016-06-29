@@ -1,0 +1,55 @@
+{
+  "name": "autohost-skeemas",
+  "version": "1.0.0",
+  "description": "An AutoHost plugin for supporting Skeemas",
+  "main": "index.js",
+  "files": [
+      "src",
+      "LICENSE"
+  ],
+  "scripts": {
+    "test": "npm coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeanKit-Labs/autohost-skeemas.git"
+  },
+  "keywords": [
+    "autohost",
+    "skeemas"
+  ],
+  "author": "LeanKit",
+  "contributors": [
+    {
+      "name": "JD Courtoy",
+      "email": "jd.courtoy@leankit.com",
+      "url": "https://github.com/bunk"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeanKit-Labs/autohost-skeemas/issues"
+  },
+  "homepage": "https://github.com/LeanKit-Labs/autohost-skeemas#readme",
+  "dependencies": {
+    "skeemas": "^1.2.2"
+  },
+  "devDependencies": {
+    "biggulp": "1.2.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "gulp": "^3.9.1",
+    "sinon": "^1.17.4",
+    "sinon-as-promised": "^4.0.0",
+    "sinon-chai": "^2.8.0"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "**/*.spec.js"
+    ],
+    "all": true
+  }
+}
